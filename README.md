@@ -80,7 +80,9 @@ Once installed, ask your coding agent for store screenshots:
 Build App Store and Google Play screenshots for my app.
 ```
 
-For apps, the skill gathers context, source screenshots, target platforms, locales, visual direction, and slide count. For games, give the agent the project or build so it can study the gameplay, identify selling points, and plan the copy and shots before capturing them.
+For apps, the skill gathers context, source screenshots, target platforms, locales, visual direction, and slide count. For games, provide the project or build and let the agent define the selling points, copy, and shots, or hand it a production brief written by a person or another agent. Both routes use the game to verify claims and capture the required gameplay states.
+
+Finished game materials go to `Docs/Material` under the target game project by default. The agent creates the directory when needed. Editor state, raw captures, and temporary files belong in a separate workspace. This repository holds the reusable capability, and project-specific files belong here only with explicit authorization.
 
 ## Example Prompts
 

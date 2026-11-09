@@ -53,6 +53,8 @@ You should NOT write `page.tsx`, device frames, or export logic by hand. They li
 
 ## Step 0: Probe for Existing Screenshot Projects
 
+For a game request, resolve the target game project and the working directory using [Game entry points and delivery](#game-entry-points-and-delivery) before probing or scaffolding. Run the editor and project-specific operations in that working directory.
+
 Before asking the new-project questions in Step 1, always inspect the current working directory for an existing app-store-screenshots implementation.
 
 Run lightweight probes:
@@ -367,6 +369,13 @@ Start the dev server and verify in the browser:
 ## Step 1: Gather Input (Before Scaffolding)
 
 For games, use the game workflow below in place of the app questionnaire. Use the target store, orientation, locale and asset scope already provided by the user or evidenced by the project. Ask only for missing decisions that affect the deliverable.
+
+### Game entry points and delivery
+
+- **Develop the brief from the game.** When the requester provides a game project or build and asks for materials, investigate the game and define the selling points, copy, and shot list.
+- **Produce from a brief.** When a person or another agent supplies requirements, use their requested assets, copy, shots, and constraints as the brief. Verify them against the game and plan any unspecified shots. Flag conflicts with the game before making unsupported claims.
+- **Deliver to the target project.** Resolve the target game project root from the request or working context. Create `Docs/Material` under that root if needed and place the finished deliverables there by default. Use another destination when the requester explicitly specifies one. If the game project root cannot be identified, ask for it before writing the deliverables.
+- **Keep working files in a separate directory.** Use a temporary workspace outside the capability repository and the delivery folder for editor state, raw captures, scripts, intermediate renders, and caches. Copy only the finished requested assets into the delivery folder. Keep this repository for reusable capability code, templates, and documentation. Put project-specific or temporary files here only with explicit authorization.
 
 ### Game workflow
 
