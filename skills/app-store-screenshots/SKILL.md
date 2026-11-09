@@ -366,7 +366,17 @@ Start the dev server and verify in the browser:
 
 ## Step 1: Gather Input (Before Scaffolding)
 
-Ask the user these. Do not proceed until you have answers:
+For games, use the game workflow below in place of the app questionnaire. Use the target store, orientation, locale and asset scope already provided by the user or evidenced by the project. Ask only for missing decisions that affect the deliverable.
+
+### Game workflow
+
+1. **Understand the game.** Read the supplied project or build documentation, then inspect the implemented gameplay, levels, and progression. Play representative states when possible. Identify what players do repeatedly, what counts as success, and what makes the decisions or experience distinctive. Check each potential claim against the intended release build or its project data.
+2. **Prioritize selling points.** Lead with the core player experience, then show the mechanics or content that add variety. Give each image one reason to play. Set the order before looking for promotional captures.
+3. **Write the copy and plan the shots.** For each image, record the selling point, headline, optional one-line explanation, and what the player must see in the frame to understand it. Specify the scene or level, how to reach the state, when to capture it, and where the text can sit without covering gameplay. For example, for a magnet mechanic, plan a shot immediately after a swipe with a block stopped on the visible magnet and another block past it, paired with “Magnets stop sliding blocks.”
+4. **Capture the planned states.** Run the game project, target build, or suitable simulator and follow the shot list. Check each capture against its planned visual evidence. An existing real capture can substitute if it matches the intended build, state, and composition. If the game cannot be run and a matching capture is unavailable, report the specific missing shot and give capture instructions. Mark any resulting deck as a draft.
+5. **Compose and verify.** Use real gameplay plus editable text. Default to a frameless composition using the `no-device` layout and image elements. Keep the board, action, or relevant HUD legible at thumbnail size. Game decks can repeat the same layout and use isolated screens where that keeps gameplay clear. Treat the phone framing guidance below as specific to app decks.
+
+For app decks, gather the following inputs:
 
 ### Required
 
@@ -753,13 +763,14 @@ Every Apple TV and Apple Watch size below was read from App Store Connect's own 
 - One idea per slide
 - Hero slide communicates the main benefit in one second
 - Readable at arm's length at thumbnail size
+- For game decks, check that the gameplay visible in each exported slide supports its planned selling point and that the copy leaves that evidence visible.
 
 ### Visual Quality
-- No two adjacent slides share the same layout
+- For app decks, no two adjacent slides share the same layout. For game decks, reuse layouts when that keeps the gameplay readable.
 - Landscape tablet slides use `split-landscape` — never two devices side-by-side
 - Apple TV, CarPlay and Mac decks lead with `split-landscape` or `hero`; Watch headlines fit on the 422 px canvas without wrapping mid-phrase
 - At least one contrast (`inverted: true`) slide when the deck is long enough
-- For decks with 5+ slides, either one cross-screen/cross-canvas moment exists or there is a clear reason to keep every screen isolated
+- For decks with 5+ slides, either one cross-screen/cross-canvas moment exists or there is a clear reason to keep every screen isolated. Showing each game state in full is a reason to use isolated screens.
 - Cross-screen moments are limited to adjacent screens and never split text, required info, faces, or critical UI
 
 ### Export Quality

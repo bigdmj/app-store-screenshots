@@ -80,7 +80,7 @@ Once installed, ask your coding agent for store screenshots:
 Build App Store and Google Play screenshots for my app.
 ```
 
-The skill guides the agent to ask for your app context, source screenshots, platforms, locales, visual direction, and slide count before generating the editor project.
+For apps, the skill gathers context, source screenshots, target platforms, locales, visual direction, and slide count. For games, give the agent the project or build so it can study the gameplay, identify selling points, and plan the copy and shots before capturing them.
 
 ## Example Prompts
 
@@ -168,7 +168,7 @@ The template README inside `skills/app-store-screenshots/template/README.md` doc
 
 ## Editor Workflow
 
-1. Capture real app screenshots from a simulator, emulator, or device.
+1. For a game, study the project, rank its selling points, and write the copy and shot list before capturing the specific gameplay states. Use a frameless composition by default. For an app, gather real screenshots from a simulator, emulator, or device.
 2. Ask your agent to scaffold or migrate the screenshot project.
 3. Run the dev server and open the editor.
 4. Use the sidebar to organize screens and the inspector to edit copy, layouts, screenshots, and elements.
